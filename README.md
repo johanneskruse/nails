@@ -1,9 +1,6 @@
 # nails
 
-This repository contains the code for the paper:  
-**Normative Alignment of Recommender Systems via Internal Label Shift** (TBA), accepted as an *extended abstract* at **[RecSys '25](https://recsys.acm.org/) Late Breaking Results**.  
-
-In this repo, we share the code used to generate the results in the paper.  
+This repository contains the code for the paper: **[Normative Alignment of Recommender Systems via Internal Label Shift](https://doi.org/10.1145/3705328.3759309)**, accepted as an *extended abstract* at **[RecSys '25](https://recsys.acm.org/) Late Breaking Results**.  
 
 ---
 
