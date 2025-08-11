@@ -452,7 +452,7 @@ plot_genre_probabilities(
     ],
     title=f"",
     figsize=(16, 9),
-    fontsize=20,
+    fontsize=28,
     save_path=plot_dir.joinpath(
         f"final_{topN}_{distribution_type}_{alpha_steck_select}_{n_samples}.pdf"
     ),

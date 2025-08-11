@@ -9,15 +9,15 @@ from utils._ebrec._constants import *
 
 
 rename_cat = {
-    "forbrug": "CON",
-    "incoming": "INC",
-    "krimi": "CRM",
-    "musik": "MUS",
-    "nationen": "OPN",
-    "nyheder": "NWS",
-    "penge": "PFI",
-    "sport": "SPT",
-    "underholdning": "ENT",
+    "forbrug": "CON",  # consumption
+    "incoming": "INC",  # income
+    "krimi": "CRM",  # crime
+    "musik": "MUS",  # music
+    "nationen": "OPN",  # opinion
+    "nyheder": "NWS",  # news
+    "penge": "PFI",  # private finance
+    "sport": "SPT",  # sports
+    "underholdning": "ENT",  # entertainment
     # "auto": "auto",
 }
 
@@ -50,6 +50,8 @@ def plot_genre_probabilities(
     fontsize: int = 26,
     title: str = "",
     figsize=(18, 12),
+    legend_bbox_to_anchor=(0.5, -0.55),
+    legend_ncols=2,
     save_path: str = None,
     show_plot: bool = True,
 ) -> None:
@@ -84,11 +86,11 @@ def plot_genre_probabilities(
     ax.legend(
         fontsize=fontsize,
         loc="lower center",
-        bbox_to_anchor=(0.5, -0.3),
-        ncols=3,
+        bbox_to_anchor=legend_bbox_to_anchor,
+        ncols=legend_ncols,
     )
     ax.grid(axis="y", linestyle="--", alpha=0.6)
-    plt.tight_layout()
+    # plt.tight_layout()
 
     if save_path:
         Path(save_path).parent.mkdir(exist_ok=True, parents=True)
