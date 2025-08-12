@@ -446,7 +446,7 @@ plot_genre_probabilities(
         f"NAILS (λ={max_lambda}, @|$\\mathcal{{C}}$|)\nKL={kl_sum_scores:.4f}",
         f"NAILS-stoch (λ={best_lambda_nails_sto}, @10)\nKL={kl_nails_stoch:.4f}, COV={nails_stoch_cov:.3f}",
         #
-        f"NAILS-der (λ={best_lambda_nails_der}, @10)\nKL={kl_nails_der:.4f}, COV={nails_der_cov:.3f}",
+        f"NAILS-det (λ={best_lambda_nails_der}, @10)\nKL={kl_nails_der:.4f}, COV={nails_der_cov:.3f}",
         #
         f"CaliRec (λ={best_lambda_steck}, @10)\nKL={kl_calirec:.4f}, COV={calirec_cov:.3f}",
     ],
